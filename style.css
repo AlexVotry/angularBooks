@@ -1,0 +1,22 @@
+/*
+red: #aa3939
+green: #39aa39
+blue: #3939aa
+brown: #aa7139
+*/
+
+body {
+  background-color: #2d882d;
+}
+
+h1 {
+  color: #3939aa;
+}
+
+main {
+  background-color: #aa7139;
+}
+
+#navBar {
+  background-color: #aa3939;
+}

@@ -1,0 +1,27 @@
+# ignore system files
+.DS_Store
+._*
+.Trash-*
+.directory
+
+# ignore editor backup and swap files
+*~
+*.bak
+*.swp
+
+# ignore local secrets
+*.env
+
+# ignore temporary files
+tmp/
+log/
+*.log
+
+# ignore extracted vendor components
+node_modules/
+Gruntfile.js
+uib/
+
+# ignore build directories
+api/
+dist/

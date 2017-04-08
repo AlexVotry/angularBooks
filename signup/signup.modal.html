@@ -1,0 +1,26 @@
+
+<div class="modal-demo">
+  <h1>{{ signup.tester }}</h1>
+
+    <div type="text/ng-template" id="signup.modal.html">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
+        </div>
+
+        <div class="modal-body" id="modal-body">
+            <ul>
+                <li ng-repeat="item in signup.items">
+                    <a href="#" ng-click="$event.preventDefault(); signup.selected.item = item">{{ item }}</a>
+                </li>
+            </ul>
+            Selected: <b>{{ signup.selected.item }}</b>
+        </div>
+
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="signup.ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="signup.cancel()">Cancel</button>
+        </div>
+    </div>
+
+
+</div>

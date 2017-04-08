@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html ng-app="app">
+    <head>
+      <meta charset="utf=8">
+      <title>Survey</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+      <!-- <link rel="stylesheet" href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css"> -->
+    </head>
+    <body>
+      <nav id="navBar" class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Book List</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/#/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/#/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div ui-view></div>
+
+
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"> </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+      <script src="uib/dist/ui-bootstrap.js"></script>
+      <script src="app.module.js"></script>
+      <script src="signup/signup.module.js"></script>
+      <script src="signup/signup.controller.js"></script>
+      <script src="signup/signup.route.js"></script>
+      <script src="login/login.module.js"></script>
+      <script src="login/login.controller.js"></script>
+      <script src="login/login.route.js"></script>
+      <script src="welcome/welcome.module.js"></script>
+      <script src="welcome/welcome.controller.js"></script>
+      <script src="welcome/welcome.route.js"></script>
+    </body>
+  </html>
