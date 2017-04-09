@@ -5,6 +5,7 @@
     .module('app',
     [ 'signup',
       'login',
+      'modal',
       'welcome']
     );
 

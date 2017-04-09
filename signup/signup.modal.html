@@ -1,6 +1,6 @@
 
 <div class="modal-demo">
-  <h1>{{ signup.tester }}</h1>
+  <h1>{{ modal.tester }}</h1>
 
     <div type="text/ng-template" id="signup.modal.html">
         <div class="modal-header">
@@ -9,16 +9,16 @@
 
         <div class="modal-body" id="modal-body">
             <ul>
-                <li ng-repeat="item in signup.items">
-                    <a href="#" ng-click="$event.preventDefault(); signup.selected.item = item">{{ item }}</a>
+                <li ng-repeat="item in modal.items">
+                    <a href="#" ng-click="$event.preventDefault(); modal.selected.item = item">{{ item }}</a>
                 </li>
             </ul>
-            Selected: <b>{{ signup.selected.item }}</b>
+            Selected: <b>{{ modal.selected.item }}</b>
         </div>
 
         <div class="modal-footer">
-            <button class="btn btn-primary" type="button" ng-click="signup.ok()">OK</button>
-            <button class="btn btn-warning" type="button" ng-click="signup.cancel()">Cancel</button>
+            <button class="btn btn-primary" type="button" ng-click="modal.ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="modal.cancel()">Cancel</button>
         </div>
     </div>
 
