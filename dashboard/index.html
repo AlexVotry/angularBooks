@@ -1,0 +1,17 @@
+<container>
+  <h1>Dashboard</h1>
+
+  <div ng-controller='LoginController as login'>
+    <h3><var> {{ login.newWord }}</var> </h3>
+  </div>
+
+  <div ng-controller='ModalController as modal'>
+    <h3> <var>{{ modal.tester }}</var> </h3>
+    <h3 ng-show="modal.selected">selected: <var>{{ modal.selected }} </var> </h3>
+  </div>
+
+  <var>{{ dashboard.test }} </var>
+
+<h3 ng-show="dashboard.chosen">username: <var>{{ dashboard.chosen.username  }}</var></h3>
+<h3 ng-show="dashboard.chosen">url: <var>{{ dashboard.chosen.url  }}</var></h3>
+</container>

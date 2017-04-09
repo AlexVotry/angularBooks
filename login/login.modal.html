@@ -1,19 +1,16 @@
 
-<div class="modal-controller signup">
+<div class="modal-controller login">
 
-    <div type="text/ng-template" id="signup.modal.html">
+    <div type="text/ng-template" id="login.modal.html">
         <div class="modal-header">
             <h3 class="modal-title" id="modal-title">{{ modal.title }}</h3>
-            <h1><var>{{ modal.tester }}</var> should be here</h1>
+            <h1>{{ modal.tester }} should be here</h1>
         </div>
 
         <div class="modal-body" id="modal-body">
-            <ul>
-                <li ng-repeat="item in modal.items">
-                    <a href="#" ng-click="$event.preventDefault(); modal.selected.username = item">{{ item }}</a>
-                </li>
-            </ul>
-            Selected: <b>{{ modal.selected.username }}</b>
+
+              <input type = "text" name="username" ng-model ="modal.credentials.username">
+              <input type="text" name="password" ng-model="modal.credentials.password">
         </div>
 
         <div class="modal-footer">

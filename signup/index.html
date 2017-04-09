@@ -1,13 +1,17 @@
 <container>
   <h1>Sign in</h1>
 
-  <h2>{{ signup.newWord }} right? </h2>
-
   <div ng-controller='LoginController as login'>
-    <h3> {{ login.newWord }} yea!</h3>
+    <h3><var> {{ login.newWord }}</var>yea!</h3>
   </div>
 
-  <button type="button" class="btn btn-default" ng-click="signup.open()">Open my Modal!</button>
+  <div ng-controller='ModalController as modal'>
+    <h3><var>{{ modal.tester }}</var></h3>
+    <h3 ng-show="modal.selected">selected: <var>{{ modal.selected.item }}</var></h3>
+    {{ modal.items[1] }}
+  </div>
 
-  <h3 ng-show="signup.selected">selected: {{ signup.selected }}</h3>
+  <var>{{ signup.test }}</var>
+
+<h3 ng-show="signup.credentials">stored item: <var>{{ signup.credentials.username }}<var></h3>
 </container>
