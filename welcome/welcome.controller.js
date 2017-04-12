@@ -5,8 +5,11 @@
     .module('welcome')
     .controller('WelcomeController', WelcomeController);
 
-function WelcomeController($rootScope) {
+function WelcomeController($rootScope, SignupService) {
   let vm = this;
+  vm.test = "what?";
+  // SignupService.erase();
+
 
 }
 

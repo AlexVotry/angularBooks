@@ -6,7 +6,7 @@
 
   function LoginController($rootScope) {
     let vm = this;
-    vm.newWord = "Got it!"
+    vm.newWord = "log in controller variable..."
 
   }
 }());

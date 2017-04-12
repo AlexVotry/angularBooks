@@ -5,10 +5,12 @@
     .module('signup')
     .controller('SignupController', SignupController);
 
-    function SignupController($uibModal, $log, $document, $rootScope) {
+    function SignupController($uibModal, $log, $document, $rootScope, SignupService) {
     var vm = this;
-    vm.items = ['item1', 'item2', 'item3'];
-    vm.tester = "found it";
+    vm.test = "this is a test";
+    vm.credentials = {
+      username: SignupService.read()
+    }
     vm.animationsEnabled = true;
 
   };

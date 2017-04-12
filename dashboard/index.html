@@ -1,8 +1,8 @@
 <container>
-  <h1>Sign in</h1>
+  <h1>Dashboard</h1>
 
   <div ng-controller='LoginController as login'>
-    <h3> {{ login.newWord }} yea!</h3>
+    <h3> {{ login.newWord }} </h3>
   </div>
 
   <div ng-controller='ModalController as modal'>
@@ -10,6 +10,8 @@
     <!-- <button type="button" class="btn btn-default" ng-click="modal.open('signup','lg')">Open my Modal!</button> -->
     <h3 ng-show="modal.selected">selected: {{ modal.selected }}</h3>
   </div>
-  {{ signup.test }}
-<h3 ng-show="signup.credentials">{{ signup.credentials.username }}</h3>
+
+  {{ dashboard.test }}
+  
+<h3 ng-show="dashboard.credentials">{{ dashboard.credentials.username }}</h3>
 </container>

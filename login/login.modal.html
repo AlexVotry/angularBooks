@@ -1,4 +1,7 @@
 
+
+
+
 <div class="modal-demo">
 
     <div type="text/ng-template" id="signup.modal.html">
@@ -8,12 +11,12 @@
         </div>
 
         <div class="modal-body" id="modal-body">
-            <ul>
-                <li ng-repeat="item in modal.items">
-                    <a href="#" ng-click="$event.preventDefault(); modal.selected.item = item">{{ item }}</a>
-                </li>
-            </ul>
-            Selected: <b>{{ modal.selected.item }}</b>
+          <form id="log-in-form" ng-controller="LogInController as login" ng-submit="login.login()">
+            <input type="text" id="login-username" ng-model="login.credentials.username">
+            <input type="password" id="login-password" ng-model="login.credentials.password">
+            <!-- <button type="submit">Log In</button> -->
+          </form>
+            <!-- Selected: <b>{{ modal.selected.item }}</b> -->
         </div>
 
         <div class="modal-footer">

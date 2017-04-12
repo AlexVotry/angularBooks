@@ -3,7 +3,8 @@
 
   angular
     .module('app',
-    [ 'signup',
+    [ 'dashboard',
+      'signup',
       'login',
       'modal',
       'welcome']
